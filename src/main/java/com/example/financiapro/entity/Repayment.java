@@ -2,20 +2,13 @@ package com.example.financiapro.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "repayment")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class Repayment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
